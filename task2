@@ -1,0 +1,12 @@
+def vowels_count(text):
+    letters = 'aeiou'
+    return dict(zip(letters, map(text.lower().count, letters)))
+
+
+def main():
+    text = input('Type some text here: ')
+    print(' '.join(f'{l} = {c}' for l, c in vowels_count(text).items()))
+
+
+if __name__ == '__main__':
+    main()
