@@ -1,0 +1,15 @@
+def lower_vowels(text):
+    letters = 'AEIOU'
+    for c in text:
+        if c in letters:
+            text = text.replace(c, c.lower())
+    return text
+
+
+def main():
+    text = input('Type some text here: ')
+    print(lower_vowels(text))
+
+
+if __name__ == '__main__':
+    main()
