@@ -1,0 +1,13 @@
+def main():
+    letters = 'AEIOU'
+    text = input('Type some text here: ')
+
+    for c in text:
+        if c in letters:
+            text = text.replace(c, c.lower())
+
+    print(text)
+
+
+if __name__ == '__main__':
+    main()
